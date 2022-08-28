@@ -3,7 +3,7 @@ import { ReactComponent as Arrow } from "./../../icons/arrow-up.svg";
 
 import "./ScrollToTop.scss";
 
-const ScrollToTop = () => {
+const ScrollToTop: React.FC = () => {
   const [showTopBtn, setShowTopBtn] = useState(false);
 
   const scrollHandler = () => {

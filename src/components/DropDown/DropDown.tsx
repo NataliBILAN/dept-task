@@ -5,19 +5,32 @@ import { ReactComponent as Arrow } from "./../../icons/arrow.svg";
 
 import "./DropDown.scss";
 
-export default function DropDown({
+interface iOption {
+  id: number;
+  name: string;
+}
+
+interface iProps {
+  optionList: iOption[];
+  placeholder?: string;
+  label?: string;
+  onChange: (param: number) => void;
+  selectedId?: number;
+}
+
+const DropDown: React.FC<iProps> = ({
   optionList,
   placeholder,
   label = "",
   onChange,
   selectedId,
-}) {
+}) => {
   const [isOpen, setIsOpen] = useState(false);
   const ref = useRef();
 
   const toggling = () => setIsOpen(!isOpen);
 
-  const onOptionClicked = (id) => () => {
+  const onOptionClicked = (id: number) => () => {
     onChange(id);
     setIsOpen(false);
   };
@@ -29,8 +42,12 @@ export default function DropDown({
       .map((option) => option.name);
 
   useEffect(() => {
-    const clickedOutside = (e) => {
-      if (isOpen && ref.current && !ref.current.contains(e.target)) {
+    const clickedOutside: EventListener = (e: Event) => {
+      if (
+        isOpen &&
+        ref.current &&
+        !ref.current.contains(e.target as HTMLElement)
+      ) {
         setIsOpen(false);
       }
     };
@@ -72,4 +89,6 @@ export default function DropDown({
       </div>
     </div>
   );
-}
+};
+
+export default DropDown;

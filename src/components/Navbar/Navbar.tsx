@@ -36,7 +36,7 @@ const listMenu = [
   },
 ];
 
-export default function Navbar() {
+const Navbar: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
@@ -128,3 +128,6 @@ export default function Navbar() {
     </nav>
   );
 }
+
+
+export default Navbar;

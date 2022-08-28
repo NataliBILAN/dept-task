@@ -4,7 +4,13 @@ import { ReactComponent as Dot } from "./../../icons/dot.svg";
 
 import "./CasePreview.scss";
 
-export default function CasePreview({ brand, title, image }) {
+interface iProps {
+  brand: string;
+  title: string;
+  image: string;
+}
+
+const CasePreview: React.FC<iProps> = ({ brand, title, image }) => {
   return (
     <div
       className="case-preview"
@@ -12,13 +18,12 @@ export default function CasePreview({ brand, title, image }) {
     >
       <div className="case-preview_brand">{brand}</div>
       <div className="case-preview_title">{title}</div>
-      <Link
-        className="case-preview_read-more"
-        to="/work"
-      >
+      <Link className="case-preview_read-more" to="/work">
         <Dot className="dot" />
         Read more
       </Link>
     </div>
   );
-}
+};
+
+export default CasePreview;

@@ -1,7 +1,7 @@
 import React from 'react';
 import './FirstScreen.scss'
 
-export default function FirstScreen() {
+const FirstScreen: React.FC = () => {
   return (
     <div className="first-screen">
       <div className="container">
@@ -13,3 +13,5 @@ export default function FirstScreen() {
     </div>
   );
 }
+
+export default FirstScreen;

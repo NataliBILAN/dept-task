@@ -8,7 +8,9 @@ import DropDown from "../components/DropDown/DropDown";
 import "./Home.scss";
 import { transformDataForLayout } from "../helpers/helper";
 
-export default function Home() {
+import { iIndustries } from "../interfaces/industries";
+
+const Home: React.FC = () => {
   const [cases, setCases] = useState([]);
   const [isFetching, setIsFetching] = useState(true);
   const [page, setPage] = useState(1);
@@ -17,7 +19,7 @@ export default function Home() {
   const pageLimit = 3;
   let descriptionItems = [];
 
-  const industries = [
+  const industries: iIndustries = [
     {
       id: 100,
       name: "all industries",
@@ -120,4 +122,6 @@ export default function Home() {
       </div>
     </div>
   );
-}
+};
+
+export default Home;
