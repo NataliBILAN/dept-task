@@ -18,8 +18,6 @@ export default function DropDown({
   const toggling = () => setIsOpen(!isOpen);
 
   const onOptionClicked = (id) => () => {
-    // setSelectedOptionId(id);
-    console.log("dd", id);
     onChange(id);
     setIsOpen(false);
   };

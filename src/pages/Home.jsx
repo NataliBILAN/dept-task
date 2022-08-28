@@ -3,9 +3,10 @@ import { useState, useEffect } from "react";
 import FirstScreen from "../components/FirstScreen/FirstScreen";
 import CasePreview from "../components/CasePreview/CasePreview";
 import CaseDescription from "../components/CaseDescription/CaseDescription";
+import DropDown from "../components/DropDown/DropDown";
 
 import "./Home.scss";
-import DropDown from "../components/DropDown/DropDown";
+import { transformDataForLayout } from "../helpers/helper";
 
 export default function Home() {
   const [cases, setCases] = useState([]);
@@ -75,24 +76,9 @@ export default function Home() {
     ({ industryId }) => industryId === selectedIndustryId
   );
 
-  const gridCases = (filteredCases.length === 0 ? cases : filteredCases).reduce(
-    (acc, current, index) => {
-      if (current.image) {
-        return [...acc, { item: current }];
-      } else {
-        if (descriptionItems.length < 3) {
-          descriptionItems.push(current);
-        }
-      }
-      if (descriptionItems.length === 3) {
-        acc = [...acc, { item: [...descriptionItems], id: `${index}-d` }];
-        descriptionItems = [];
-        return acc;
-      }
-
-      return acc;
-    },
-    []
+  const gridCases = transformDataForLayout(
+    filteredCases.length === 0 ? cases : filteredCases,
+    descriptionItems
   );
 
   return (
@@ -112,16 +98,21 @@ export default function Home() {
 
       <div className="case-list">
         {cases &&
-          gridCases.map((item) => {
-            if (Array.isArray(item.item)) {
-              return <CaseDescription descriptions={item.item} key={item.id} />;
+          gridCases.map((caseItem) => {
+            if (Array.isArray(caseItem.item)) {
+              return (
+                <CaseDescription
+                  descriptions={caseItem.item}
+                  key={caseItem.id}
+                />
+              );
             } else {
               return (
                 <CasePreview
-                  key={item.item.id}
-                  brand={item.item.brand}
-                  title={item.item.title}
-                  image={item.item.image}
+                  key={caseItem.item.id}
+                  brand={caseItem.item.brand}
+                  title={caseItem.item.title}
+                  image={caseItem.item.image}
                 />
               );
             }
