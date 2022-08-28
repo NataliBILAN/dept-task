@@ -1,0 +1,56 @@
+@import '../App.scss';
+
+.home-page {
+    .dropdown {
+        width: 190px;
+    }
+
+    .case-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .filter-bar {
+        display: flex;
+        align-items: center;
+        padding: 25px 0;
+    }
+}
+
+
+
+@media screen and (max-width: $xs){
+    .home-page {
+        .case-list {
+            flex-direction: column;
+        }
+
+        .filter-bar {
+            min-height: 82px;
+            background-color: $main-color;
+            box-sizing: border-box;
+
+                .dropdown {
+                    width: 125px;
+
+                    &_option-list,
+                    &_option,
+                    &_header,
+                    .dropdown-toogle-wrap {
+                        background-color: $main-color;
+                        color: $white-color;
+                        font-size: 16px;
+                        line-height: 18px;
+                    }
+
+
+                    .dropdown-toggle {
+                        &_arrow {
+                            fill: $white-color;
+                        }
+                    }
+
+                }
+        }
+    }
+}

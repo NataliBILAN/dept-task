@@ -1,0 +1,49 @@
+@import '../../App.scss';
+
+.top-to-btm {
+        position: fixed;        
+        bottom: 40px;
+        right: 25px;
+        z-index: 100;
+        cursor: pointer;
+        text-align: center;
+
+    &_icon {
+        animation: movebtn 3s ease-in-out infinite;
+        transition: all .5s ease-in-out;
+
+            &:hover {
+                animation: none;
+                color: #551B54;
+            }           
+    }
+
+     p {
+                font-size: 18px;
+                line-height: 18px;
+                color: $accent-color;
+            }
+}
+
+
+@keyframes movebtn {
+  0% {
+    transform: translateY(0px);
+  }
+
+  25% {
+    transform: translateY(20px);
+  }
+
+  50% {
+    transform: translateY(0px);
+  }
+
+  75% {
+    transform: translateY(-20px);
+  }
+
+  100% { 
+    transform: translateY(0px);
+  }
+}

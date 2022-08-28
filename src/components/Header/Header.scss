@@ -1,0 +1,28 @@
+@import './../../App.scss';
+
+.header {
+     position: sticky;
+        top: 0;
+        z-index: 110;
+    display: flex;
+    align-items: center;
+    height: 115px;
+    padding: 0 55px;
+    background-color: $main-color;
+}
+
+@media screen and (max-width: $xs) {
+    .header {
+        padding: 0;
+        background-color: $white-color;
+        height: 56px;
+    }
+}
+
+@media (min-width: $md) {
+    .header {
+        position: sticky;
+        top: 0;
+        z-index: 110;
+    }
+}

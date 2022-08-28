@@ -1,0 +1,70 @@
+@import '../../App.scss';
+
+.case-descriptions {
+    min-height: 568px;
+    flex: 0 0 476px;
+            box-sizing: border-box;
+
+    padding: 65px 32px;
+    background-color: $main-color;
+    color: $white-color;
+    
+    .case-description {
+        padding-bottom: 36px;
+        margin-bottom: 32px;
+
+        &:not(:last-child) {
+            border-bottom: 1px solid #DDDDDD;
+        }
+
+        &_brand {
+            text-transform: uppercase;
+        }
+
+        &_title {
+            margin: 12px 0;
+            font-size: 16px;
+            line-height: 16px;
+        }
+
+        &_read-more {
+            width: 50%;
+            color: $white-color;
+            text-decoration: none;
+
+            &:hover {
+                .dot {
+                    transform: scale(1.3);
+                }                
+            }
+
+            .dot {
+                margin-right: 12px;
+            }
+        }
+    } 
+}
+
+@media screen and (max-width: $xs){
+.case-descriptions {
+        padding: 24px;
+        min-height: 485px;
+
+        &_title {
+            font-size: 26px;
+            line-height: 26px;
+        }
+}
+}
+
+@media screen and (max-width: $md) {
+    .case-descriptions {
+        flex: 1 0 100%;
+    }
+}
+
+@media (min-width: $md) {
+      .case-descriptions {
+        flex: 1 0 32%;
+    }
+}

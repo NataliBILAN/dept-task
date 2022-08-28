@@ -1,0 +1,70 @@
+@import '../../App.scss';
+
+.dropdown {
+    width: 100%;
+    position: relative;
+
+    .dropdown-toogle-wrap {
+        display: flex;
+        font-size: 26px;
+        color: $grey-color;
+    }
+
+    .dropdown-toggle {
+        position: relative;
+        display: flex;
+        margin-left: 5px;
+        cursor: pointer;
+
+        &_arrow {
+            position: absolute;
+            right: -15%;
+            top: 50%;
+            fill: $main-color;
+            transform: translateY(-50%) rotate(0);
+            transition: transform 0.4s ease-out;
+
+            &--open {
+                transform: rotate(180deg);
+            }
+        }
+        }
+
+    &_header {
+        position: relative;
+        color: $main-color;
+        border-bottom: 1px solid #0E0E0E;
+
+    }
+
+    &_option-list {
+        position: absolute;
+        margin: 0;
+        width: 100%;
+        text-align: right;
+        background-color: $white-color;
+        font-size: 26px;
+        line-height: 26px;
+        box-shadow: 0 0 0 1px #d9d9d9 inset;
+        border-radius: 3px;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.4s ease-out;
+
+        &--open {
+            visibility: visible;
+            opacity: 1;
+            z-index: 100;
+        }   
+}
+
+    &_option {
+            padding: 5px 10px;
+            cursor: pointer;
+            list-style: none;
+
+            &:hover {
+                background-color: $light-grey;
+            }
+        }
+}

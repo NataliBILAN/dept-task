@@ -1,0 +1,259 @@
+{
+  "cases-1": [
+    {
+      "id": 1,
+      "brand": "BOL.COM",
+      "industryId": 101,
+      "title": "A Summer island in the Netherlands",
+      "image": "images/image_4.png"
+    },
+    {
+      "id": 2,
+      "brand": "KEMPEN",
+      "industryId": 102,
+      "title": "Not some average banking website",
+      "image": "images/image_5.png"
+    },
+    {
+      "id": 3,
+      "brand": "PHILIPS",
+      "industryId": 103,
+      "title": "Beautiful design meets innovative technology",
+      "image": "images/image_33.png"
+    },
+    {
+      "id": 4,
+      "brand": "GEMEENTEMUSEUM",
+      "industryId": 102,
+      "title": "A 100 years of Mondriaan & De Stijl",
+      "image": "images/image_7.png"
+    },
+    {
+      "id": 5,
+      "brand": "GEMEENTEMUSEUM",
+      "industryId": 101,
+      "title": "A 100 years of Mondriaan & De Stijl",
+      "image": "images/image_3.png"
+    },
+    {
+      "id": 6,
+      "brand": "MICROSOFT",
+      "industryId": 103,
+      "title": "Tapping into Ireland’s unique gaming culture and bringing a fresh flavour to their Xbox social media channels",
+      "image": null
+    },
+    {
+      "id": 7,
+      "brand": "O’NEILL",
+      "industryId": 101,
+      "title": "Integrating existing content into O’Neills’s new e-commerce platform",
+      "image": null
+    },
+    {
+      "id": 8,
+      "brand": "MICROSOFT",
+      "industryId": 102,
+      "title": "Tapping into Ireland’s unique gaming culture and bringing a fresh flavour to their Xbox social media channels",
+      "image": null
+    },
+    {
+      "id": 9,
+      "brand": "BE LIGHTNING",
+      "industryId": 101,
+      "title": "Delivering clarity on a global scale",
+      "image": "images/image_8.png"
+    },
+    {
+      "id": 10,
+      "brand": "TUI",
+      "industryId": 103,
+      "title": "Swipe to find your next holiday destination",
+      "image": "images/image_9.png"
+    },
+    {
+      "id": 11,
+      "brand": "MICROSOFT",
+      "industryId": 102,
+      "title": "Tapping into Ireland’s unique gaming culture and bringing a fresh flavour to their Xbox social media channels",
+      "image": null
+    },
+    {
+      "id": 12,
+      "brand": "O’NEILL",
+      "industryId": 101,
+      "title": "Integrating existing content into O’Neills’s new e-commerce platform",
+      "image": null
+    },
+    {
+      "id": 13,
+      "brand": "MICROSOFT",
+      "industryId": 103,
+      "title": "Tapping into Ireland’s unique gaming culture and bringing a fresh flavour to their Xbox social media channels",
+      "image": null
+    },
+    {
+      "id": 14,
+      "brand": "BE LIGHTNING",
+      "industryId": 102,
+      "title": "Delivering clarity on a global scale",
+      "image": "images/image_8.png"
+    },
+    {
+      "id": 15,
+      "brand": "TUI",
+      "industryId": 103,
+      "title": "Swipe to find your next holiday destination",
+      "image": "images/image_9.png"
+    },
+    {
+      "id": 16,
+      "brand": "BE LIGHTNING",
+      "industryId": 103,
+      "title": "Delivering clarity on a global scale",
+      "image": "images/image_8.png"
+    },
+    {
+      "id": 17,
+      "brand": "ZALANDO",
+      "industryId": 101,
+      "title": "Innovative SEO and content strategy for Zalando",
+      "image": "images/image_12.png"
+    },
+    {
+      "id": 18,
+      "brand": "KONINKLIJKE BIBLIOTHEEK",
+      "industryId": 102,
+      "title": "The search of the most influential book ever",
+      "image": "images/image_13.png"
+    }
+  ],
+  "cases-2": [
+    {
+      "id": 19,
+      "brand": "BOL.COM",
+      "industryId": 101,
+      "title": "A Summer island in the Netherlands",
+      "image": "images/image_4.png"
+    },
+    {
+      "id": 20,
+      "brand": "KEMPEN",
+      "industryId": 101,
+      "title": "Not some average banking website",
+      "image": "images/image_5.png"
+    },
+    {
+      "id": 21,
+      "brand": "PHILIPS",
+      "industryId": 103,
+      "title": "Beautiful design meets innovative technology",
+      "image": "images/image_33.png"
+    },
+    {
+      "id": 22,
+      "brand": "GEMEENTEMUSEUM",
+      "industryId": 101,
+      "title": "A 100 years of Mondriaan & De Stijl",
+      "image": "images/image_7.png"
+    },
+    {
+      "id": 23,
+      "brand": "GEMEENTEMUSEUM",
+      "industryId": 103,
+      "title": "A 100 years of Mondriaan & De Stijl",
+      "image": "images/image_3.png"
+    },
+    {
+      "id": 24,
+      "brand": "MICROSOFT",
+      "industryId": 101,
+      "title": "Tapping into Ireland’s unique gaming culture and bringing a fresh flavour to their Xbox social media channels",
+      "image": null
+    },
+    {
+      "id": 25,
+      "brand": "O’NEILL",
+      "industryId": 102,
+      "title": "Integrating existing content into O’Neills’s new e-commerce platform",
+      "image": null
+    },
+    {
+      "id": 26,
+      "brand": "MICROSOFT",
+      "industryId": 101,
+      "title": "Tapping into Ireland’s unique gaming culture and bringing a fresh flavour to their Xbox social media channels",
+      "image": null
+    },
+    {
+      "id": 27,
+      "brand": "BE LIGHTNING",
+      "industryId": 102,
+      "title": "Delivering clarity on a global scale",
+      "image": "images/image_8.png"
+    },
+    {
+      "id": 28,
+      "brand": "TUI",
+      "industryId": 101,
+      "title": "Swipe to find your next holiday destination",
+      "image": "images/image_9.png"
+    },
+    {
+      "id": 29,
+      "brand": "MICROSOFT",
+      "industryId": 101,
+      "title": "Tapping into Ireland’s unique gaming culture and bringing a fresh flavour to their Xbox social media channels",
+      "image": null
+    },
+    {
+      "id": 30,
+      "brand": "O’NEILL",
+      "industryId": 102,
+      "title": "Integrating existing content into O’Neills’s new e-commerce platform",
+      "image": null
+    },
+    {
+      "id": 31,
+      "brand": "MICROSOFT",
+      "industryId": 102,
+      "title": "Tapping into Ireland’s unique gaming culture and bringing a fresh flavour to their Xbox social media channels",
+      "image": null
+    },
+    {
+      "id": 32,
+      "brand": "BE LIGHTNING",
+      "industryId": 101,
+      "title": "Delivering clarity on a global scale",
+      "image": "images/image_8.png"
+    },
+    {
+      "id": 33,
+      "brand": "TUI",
+      "industryId": 101,
+      "title": "Swipe to find your next holiday destination",
+      "image": "images/image_9.png"
+    },
+    {
+      "id": 34,
+      "brand": "BE LIGHTNING",
+      "industryId": 101,
+      "title": "Delivering clarity on a global scale",
+      "image": "images/image_8.png"
+    },
+    {
+      "id": 35,
+      "brand": "ZALANDO",
+      "industryId": 101,
+      "title": "Innovative SEO and content strategy for Zalando",
+      "image": "images/image_12.png"
+    },
+    {
+      "id": 36,
+      "brand": "KONINKLIJKE BIBLIOTHEEK",
+      "industryId": 101,
+      "title": "The search of the most influential book ever",
+      "image": "images/image_13.png"
+    }
+  ],
+  "clients": [{ "id": 11, "name": "Nivea", "image": "api/icons/svg_1" }]
+}

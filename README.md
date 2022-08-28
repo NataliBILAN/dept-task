@@ -4,6 +4,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
+Before making any request, we need to raise our server, to do that, we execute the following command:
+
+### `npm run server`
+
 In the project directory, you can run:
 
 ### `npm start`

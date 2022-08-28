@@ -1,0 +1,31 @@
+@import '../../App.scss';
+
+.first-screen {
+    position: relative;
+    background: center / cover no-repeat $main-color url(./../../images/first-screen.png);
+    min-height: 628px;
+    max-height: 628px;
+
+    &_title {
+        position: absolute;
+        bottom: 56px;
+        margin: 0;
+        max-width: 580px;
+        font-size: 34px;
+        line-height: 34px;
+        color: $white-color;
+        font-weight: 400;
+    }
+}
+
+@media screen and (max-width: $xs){ 
+    .first-screen {
+        min-height: 415px;
+        max-height: 415px;
+
+        
+    &_title {
+        bottom: 22px;
+    }
+    }
+}
