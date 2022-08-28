@@ -26,7 +26,7 @@ const DropDown: React.FC<iProps> = ({
   selectedId,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const ref = useRef();
+  const ref = useRef<HTMLDivElement | null>(null);
 
   const toggling = () => setIsOpen(!isOpen);
 
